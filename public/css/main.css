@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: rgb(255,225,224);
+  box-sizing: border-box;
 }
 header {
   font-family: 'Bungee Inline', cursive;
@@ -19,30 +20,44 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 .titleText {
-  padding-top: 10px;
   font-size: 3em;
 }
 .searchBar {
   width: 25vw;
   text-align: center;
   height: 20px;
-  background-color: rgb(255,225,224);
+  background-color: #FAFAFAFA;
   border: none;
   color: rgb(169,169,169);
   font-size: 1.0em;
 }
 .searchCont {
   width: 50%;
+  margin-left: 5%;
 }
 .searchCont .card {
   width: 50vw;
   display: flex;
+  min-height: 501px;
+  background-color: rgb(238,238,238);
 }
-.card img {
-  width: 50%;
+.nowPlayingCont {
+  margin-right: 5%;
+  height: 75vh;
+  overflow-y: scroll;
+}
+.nowPlayingCont .card {
+  margin-bottom: 15px;
+}
+.nowPlayingCont img {
+  width: 80%;
+}
+.searchCont .card img {
+  width: 48%;
+  margin-right: 2%;
 }
 .nowPlayingCont .card div{
   width: 100%;
@@ -54,13 +69,58 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 10px;
 }
 .detailsCont {
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.detail {
+  width: 96%;
+  background-color: white;
+
+}
+.detailsCont div {
+  width: 96%;
+  margin-right: 4%;
 }
 .title {
   font-size: 1.2em;
   background-color: rgb(238,238,238);
   text-align: center;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+.editCont {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10px;
+  justify-content: space-around;
+}
+.editCont input {
+  width: 100%;
+}
+.addBtn {
+  width: 96%;
+  text-align: center;
+  background-color: rgb(173,216,230);
+  border: none;
+}
+.initialSearchCont {
+  background-color: rgb(238,238,238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instruct {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: gray;
+}
+.deleteBtn {
+  width: 96%;
+  text-align: center;
+  background-color: rgb(184,30,40);
 }

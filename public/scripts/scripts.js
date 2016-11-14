@@ -21,15 +21,15 @@ function fetchAndRender() {
     let $card = $('<div class="card"></div>');
     let $detailsCont = $('<div class="detailsCont"></div>');
     let $title = $(`<div class="title">${mov.title || mov.Title}<div>`);
-    let $poster = $(`<img src="${mov.poster || mov.Poster}"></img>`);
-    let $runtime = $(`<div class="runtime">${mov.runtime || mov.runtime}</div>`);
-    let $writer = $(`<div class="writer"><span>Writer(s):</span> ${mov.writer || mov.Writer}</div>`);
-    let $director = $(`<div class="director"><span>Director:</span> ${mov.director || mov.Director}</div>`);
-    let $actors = $(`<div class="actors"><span>Actors:</span> ${mov.actors || mov.Actors}</div>`);
-    let $plot = $(`<div class="plot">${mov.plot || mov.Plot}</div>`);
-    let $rated = $(`<div class="rated"><span>Rated:</span> ${mov.rated || mov.Rated}</div>`);
-    let $metascore = $(`<div class="metascore"><span>Metascore:</span> ${mov.metascore || mov.Metascore}</div>`);
-    let $imdb = $(`<div class="imdb"><a href="http://www.imdb.com/title/${mov.imdbid || mov.imdbID}">IMDB Movie Page</a></div>`);
+    let $poster = $(`<img class="detail"src="${mov.poster || mov.Poster}"></img>`);
+    let $runtime = $(`<div class="runtime detail">${mov.runtime || mov.runtime}</div>`);
+    let $writer = $(`<div class="writer detail"><span>Writer(s):</span> ${mov.writer || mov.Writer}</div>`);
+    let $director = $(`<div class="director detail"><span>Director:</span> ${mov.director || mov.Director}</div>`);
+    let $actors = $(`<div class="actors detail"><span>Actors:</span> ${mov.actors || mov.Actors}</div>`);
+    let $plot = $(`<div class="plot detail">${mov.plot || mov.Plot}</div>`);
+    let $rated = $(`<div class="rated detail"><span>Rated:</span> ${mov.rated || mov.Rated}</div>`);
+    let $metascore = $(`<div class="metascore detail"><span>Metascore:</span> ${mov.metascore || mov.Metascore}</div>`);
+    let $imdb = $(`<div class="imdb detail"><a href="http://www.imdb.com/title/${mov.imdbid || mov.imdbID}" target="_blank">IMDB Movie Page</a></div>`);
 
     $detailsCont.append($title, $writer, $director, $actors, $plot, $rated, $metascore, $imdb);
     $card.append($poster, $detailsCont);

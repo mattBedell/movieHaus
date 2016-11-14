@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Movie Details</title>
+    <link rel="stylesheet" href="/public/css/main.css" media="screen" title="no title">
   </head>
   <body>
-    <div class="editCont">
-      <h3>Edit</h3>
-      <input type="text" class="iTitle" placeholder="Title">
-      <input type="text" class="iWriter" placeholder="Writer">
-      <input type="text" class="iDirector" placeholder="Director">
-      <input type="text" class="iPlot" placeholder="Plot">
-      <input type="text" class="iRated" placeholder="Rating">
-      <input type="text" class="iMetascore" placeholder="Metascore">
-      <input type="text" class="iPoster" placeholder="Poster URL">
-      <div class="submitBtn">Submit</div>
+    <div class="contentContainer">
+      <div class="searchCont"></div>
+      <div class="editCont">
+        <div class="editCont">
+          <h3>Edit</h3>
+          <input type="text" class="iTitle" placeholder="Title">
+          <input type="text" class="iWriter" placeholder="Writer">
+          <input type="text" class="iDirector" placeholder="Director">
+          <textarea  class="iPlot" rows="3" cols="100" placeholder="Plot"></textarea>
+          <input type="text" class="iRated" placeholder="Rating">
+          <input type="text" class="iMetascore" placeholder="Metascore">
+          <input type="text" class="iPoster" placeholder="Poster URL">
+          <button class="submitBtn">Submit</button>
+        </div>
+      </div>
     </div>
     <script src="/public/scripts/jquery.js" type="text/javascript"></script>
     <script src="/public/scripts/scripts.js" type="text/javascript"></script>
